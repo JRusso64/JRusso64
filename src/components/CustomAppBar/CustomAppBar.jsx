@@ -1,4 +1,4 @@
-import './AppBar.css';
+import './CustomAppBar.css';
 
 const AppBar = () => {
     return(
