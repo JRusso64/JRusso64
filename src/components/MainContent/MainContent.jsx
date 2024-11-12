@@ -6,17 +6,16 @@ import CardActionArea from '@mui/material/CardActionArea';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
-import forum_image from '../../images/forum.jpeg'
 
 const projects = [
-    { id: 1, title: 'Project One', image: forum_image, link: '/forum-project' },
+    { id: 1, title: 'Project One', image: 'https://via.placeholder.com/150', link: '/project-one' },
     { id: 2, title: 'Project Two', image: 'https://via.placeholder.com/150', link: '/project-two' },
     { id: 3, title: 'Project Three', image: 'https://via.placeholder.com/150', link: '/project-three' }
 ];
 
 const MainContent = () => {
     return (
-        <Box>
+        <Box sx={{ pt: 8 }}> {/* Added padding-top to avoid overlap */}
             <Typography variant="h4" gutterBottom>Top Projects</Typography>
             
             <Grid container spacing={2}>

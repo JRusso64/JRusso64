@@ -23,7 +23,6 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ flexGrow: 1 }}>
-
         <Grid container spacing={2}>
           <Grid item xs={2}>
             <SideBar />
@@ -33,7 +32,7 @@ function App() {
             <Box 
               display="flex" 
               justifyContent="center" 
-              alignItems="center" 
+              alignItems="flex-start" 
               height="100vh"
             >
               <MainContent />
