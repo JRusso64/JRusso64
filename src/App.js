@@ -1,15 +1,28 @@
 import * as React from 'react';
-import AppBar from './components/CustomAppBar/CustomAppBar';
 import SideBar from './components/CustomDrawer/ResponsiveDrawer';
 import MainContent from './components/MainContent/MainContent';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  palette: {
+    mode: 'dark',
+    primary: {
+      main: '#90caf9',
+    },
+    secondary: {
+      main: '#f48fb1'
+    },
+  },
+})
+
+
 
 function App() {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Box sx={{ flexGrow: 1 }}>
-        <AppBar />
 
         <Grid container spacing={2}>
           <Grid item xs={2}>
@@ -29,7 +42,7 @@ function App() {
           <Grid item xs={2} />
         </Grid>
       </Box>
-    </>
+    </ThemeProvider>
   );
 }
 

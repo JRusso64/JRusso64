@@ -1,11 +1,12 @@
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 
 const MainContent = () => {
     return  (
         <Box>
-            <h1>Top Projects</h1>
+            <Typography>Top Projects</Typography>
 
-            <h1>Smaller Projects</h1>
+            <Typography>Smaller Projects</Typography>
         </Box>
     )
 
