@@ -35,9 +35,9 @@ function ResponsiveDrawer(props) {
   const drawer = (
     <div>
       <Toolbar />
-      <List>
-        <Typography>Top Projects</Typography>
-        <Typography>Small Projects</Typography>
+      <List sx={{textAlign: "center"}}>
+        <Typography variant="h6">Top Projects</Typography>
+        <Typography variant="h6">Small Projects</Typography>
       </List>
     </div>
   );
@@ -58,7 +58,7 @@ function ResponsiveDrawer(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: 'center' }}>
+          <Typography variant="h4" component="div" sx={{ flexGrow: 1, textAlign: 'center' }}>
             John Russo
           </Typography>
         </Toolbar>

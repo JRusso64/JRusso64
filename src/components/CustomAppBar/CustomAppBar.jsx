@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 const AppBar = () => {
     return(
         <>
-            <Typography variant="h6" component="div">John Russo</Typography>
+            <Typography variant="h6">John Russo</Typography>
 
             <ul className="nav-list">
                 <li><a href="/">Website</a></li>
