@@ -7,11 +7,13 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import forum_thumbnail from '../../images/forum.jpeg';
+import text_thumbnail from '../../images/aslingothumbnail.JPG';
+import aslingo_thumbnail from '../../images/textthumbnail.jpg';
 
 const projects = [
     { id: 1, title: 'Forum', image: forum_thumbnail, link: '/forum-project' },
-    { id: 2, title: 'Sign Language AI', image: 'https://via.placeholder.com/150', link: '/project-two' },
-    { id: 3, title: 'Personal Messenger', image: 'https://via.placeholder.com/150', link: '/project-three' }
+    { id: 2, title: 'Sign Language AI', image: aslingo_thumbnail, link: '/project-two' },
+    { id: 3, title: 'Personal Messenger', image: text_thumbnail, link: '/project-three' }
 ];
 
 const MainContent = () => {
