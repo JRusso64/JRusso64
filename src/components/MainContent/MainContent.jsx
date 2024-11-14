@@ -14,7 +14,7 @@ import text_thumbnail from '../../images/textthumbnail.jpg';
 const projects = [
     { id: 1, title: 'Forum', image: forum_thumbnail, link: '/forum-project' },
     { id: 2, title: 'Sign Language AI', image: aslingo_thumbnail, link: '/aslingo' },
-    { id: 3, title: 'Personal Messenger', image: text_thumbnail, link: '/project-three' }
+    { id: 3, title: 'Personal Messenger', image: text_thumbnail, link: '/textmessenger' }
 ];
 
 const MainContent = () => {

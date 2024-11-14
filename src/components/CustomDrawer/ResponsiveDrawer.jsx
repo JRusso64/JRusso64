@@ -7,6 +7,10 @@ import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import List from '@mui/material/List';
+import Link from '@mui/material/Link';
+import Divider from '@mui/material/Divider';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { useLocation } from 'react-router-dom';
@@ -36,12 +40,31 @@ function ResponsiveDrawer(props) {
 
   const drawer = (
     <div>
-      <Toolbar />
-      <List sx={{ textAlign: "center" }}>
-        <Typography variant="h6">Top Projects</Typography>
-        <Typography variant="h6">Small Projects</Typography>
-      </List>
-    </div>
+    <Toolbar />
+    <List sx={{ textAlign: "center" }}>
+      {/* Top Projects Link */}
+      <ListItem button component={Link} to="top-projects" smooth={true} duration={500}>
+        <ListItemText>
+          <Typography variant="h6" sx={{ cursor: 'pointer', color: 'white' }}>
+            Top Projects
+          </Typography>
+        </ListItemText>
+      </ListItem>
+
+      {/* Small Projects Link */}
+      <ListItem button component={Link} to="small-projects" smooth={true} duration={500}>
+        <ListItemText>
+          <Typography variant="h6" sx={{ cursor: 'pointer', color: 'white' }}>
+            Small Projects
+          </Typography>
+        </ListItemText>
+      </ListItem>
+
+      <Divider sx={{ my: 2 }} /> {/* Divider to separate sections */}
+
+      {/* Add more links as needed */}
+    </List>
+  </div>
   );
 
   const container = window !== undefined ? () => window().document.body : undefined;

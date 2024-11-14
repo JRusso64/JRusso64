@@ -7,6 +7,7 @@ import Grid from '@mui/material/Grid';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import ForumProject from './components/ForumProject/ForumProject';
 import SignLanguageProject from './components/ASLingo/SignLanguageProject';
+import TextMessenger from './components/TextMessenger/TextMessenger';
 
 const theme = createTheme({
   palette: {
@@ -41,7 +42,7 @@ function App() {
                   <Route path="/" element={<MainContent />} />
                   <Route path="/forum-project" element={<ForumProject />} />
                   <Route path="/aslingo" element={<SignLanguageProject />} />
-                  {/* <Route path="/project-three" element={<ProjectPage title="Personal Messenger" />} /> */}
+                  <Route path="/textmessenger" element={<TextMessenger />} />
                 </Routes>
               </Box>
             </Grid>
