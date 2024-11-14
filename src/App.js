@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BrowserRouter as Router, Routes, Route, HashRouter } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import SideBar from './components/CustomDrawer/ResponsiveDrawer';
 import MainContent from './components/MainContent/MainContent';
 import Box from '@mui/material/Box';
@@ -8,6 +8,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import ForumProject from './components/ForumProject/ForumProject';
 import SignLanguageProject from './components/ASLingo/SignLanguageProject';
 import TextMessenger from './components/TextMessenger/TextMessenger';
+import Resume from './components/Resume/Resume';
 
 const theme = createTheme({
   palette: {
@@ -43,6 +44,7 @@ function App() {
                   <Route path="/forum-project" element={<ForumProject />} />
                   <Route path="/aslingo" element={<SignLanguageProject />} />
                   <Route path="/textmessenger" element={<TextMessenger />} />
+                  <Route path="/resume" element={<Resume />} />
                 </Routes>
               </Box>
             </Grid>

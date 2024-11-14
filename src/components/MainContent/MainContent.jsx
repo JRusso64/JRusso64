@@ -32,7 +32,7 @@ const MainContent = () => {
                     </Grid>
 
                     <Grid item xs={6}>
-                        <Link href="/#/path-to-resume.pdf" target="_blank" underline="none">
+                        <Link href="/#/resume" target="_blank" underline="none">
                             <Button variant="contained" fullWidth sx={{backgroundColor: "white"}}>
                                 Resume
                             </Button>
