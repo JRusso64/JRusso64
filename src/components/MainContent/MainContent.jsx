@@ -12,9 +12,9 @@ import aslingo_thumbnail from '../../images/aslingothumbnail.JPG';
 import text_thumbnail from '../../images/textthumbnail.jpg';
 
 const projects = [
-    { id: 1, title: 'Forum', image: forum_thumbnail, link: '/forum-project' },
-    { id: 2, title: 'Sign Language AI', image: aslingo_thumbnail, link: '/aslingo' },
-    { id: 3, title: 'Personal Messenger', image: text_thumbnail, link: '/textmessenger' }
+    { id: 1, title: 'Forum', image: forum_thumbnail, link: '/#/forum-project' },
+    { id: 2, title: 'Sign Language AI', image: aslingo_thumbnail, link: '/#/aslingo' },
+    { id: 3, title: 'Personal Messenger', image: text_thumbnail, link: '/#/textmessenger' }
 ];
 
 const MainContent = () => {
@@ -32,7 +32,7 @@ const MainContent = () => {
                     </Grid>
 
                     <Grid item xs={6}>
-                        <Link href="/path-to-resume.pdf" target="_blank" underline="none">
+                        <Link href="/#/path-to-resume.pdf" target="_blank" underline="none">
                             <Button variant="contained" fullWidth sx={{backgroundColor: "white"}}>
                                 Resume
                             </Button>

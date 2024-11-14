@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, HashRouter } from 'react-router-dom';
 import SideBar from './components/CustomDrawer/ResponsiveDrawer';
 import MainContent from './components/MainContent/MainContent';
 import Box from '@mui/material/Box';
@@ -24,7 +24,7 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Router>
+      <HashRouter>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={2}>
             <Grid item xs={2}>
@@ -50,7 +50,7 @@ function App() {
             <Grid item xs={2} />
           </Grid>
         </Box>
-      </Router>
+      </HashRouter>
     </ThemeProvider>
   );
 }
