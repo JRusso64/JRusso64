@@ -1,26 +1,27 @@
-import myResume from '../../images/resume.pdf'
+import myResume from '../../images/resume.pdf';
 
 const Resume = () => {
-    return(
-        <>
-            <iframe title="My Resume" 
-                    width="100%" 
-                    height="100vh"
-                    style={{
-                        border: "none",
-                        display: "block",
-                        margin: 0,
-                        padding: 0,
-                        overflow: "hidden",
-                        width: "100%",
-                        height: "100vh",
-                        objectFit: "cover",
-                    }}
-                    src={`${myResume}#view=FitH&toolbar=0&navpanes=0`}>
-                    </iframe>
-        </> 
-    )
+    return (
+        <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: '100%',
+            height: '100vh', // Make sure it takes the full height of the viewport
+            overflow: 'hidden'
+        }}>
+            <iframe
+                title="My Resume"
+                style={{
+                    border: "none",
+                    width: "100%",
+                    height: "100%", // Let iframe take full height of the container
+                }}
+                src={`${myResume}#view=FitH&toolbar=0&navpanes=0`}
+            />
+        </div>
+    );
 }
-
 
 export default Resume;
